@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu — Bellucci Desserts</title>
+    <link rel="canonical" href="https://belluccidesserts.in/menu.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .menu-board { padding: 0 0 72px; }
+        .menu-row { display: grid; gap: 18px; margin-bottom: 18px; }
+        .menu-row.three { grid-template-columns: repeat(3, 1fr); }
+        .menu-row.two { grid-template-columns: 1fr 1fr; max-width: 720px; margin-left: auto; margin-right: auto; }
+        @media (max-width: 768px) {
+            .menu-row.three { grid-template-columns: 1fr; }
+            .menu-row.two { grid-template-columns: 1fr; max-width: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="rail">Printed board may differ from this page — the window wins</div>
+    <header class="site-head">
+        <div class="wrap head-inner">
+            <a href="index.html" class="brand" aria-label="Bellucci Desserts home">
+                <span class="brand-mark">Bellucci Desserts</span>
+                <span class="brand-tag">Street sweets lab</span>
+            </a>
+            <button type="button" class="nav-toggle" aria-expanded="false" aria-label="Open menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" aria-current="page">Menu</a></li>
+                <li><a href="visit.html">Visit</a></li>
+                <li><a href="menu.html#specials" class="nav-cta">Tonight’s list</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrap page-hero">
+            <p class="section-label">Board</p>
+            <h1>Order at the window.</h1>
+            <p>Everything is cooked or built to travel. Prices are samples for this demo.</p>
+        </div>
+
+        <div class="wrap menu-board" id="specials">
+            <p class="section-label" style="margin-bottom:14px;">This week’s wall</p>
+            <h2 style="margin: 0 0 8px; font-family: var(--font-display); font-weight: 800; font-size: clamp(1.6rem, 3vw, 2.2rem); color: var(--cream);">Five signatures</h2>
+            <p class="section-lead" style="margin-top:0;">Each tile is a different photo from this site’s set.</p>
+
+            <div class="menu-row three">
+                <article class="menu-tile">
+                    <img src="images/kumo-09.png" width="600" height="480" alt="Ice cream sandwich composite with caramel and honeycomb" loading="lazy">
+                    <div class="menu-tile-body">
+                        <h3>Split-screen sandwich</h3>
+                        <p>Two moods on one card — share or don’t.</p>
+                        <span class="price">£7.80</span>
+                    </div>
+                </article>
+                <article class="menu-tile">
+                    <img src="images/kumo-10.png" width="600" height="480" alt="Swirled pastry in a bowl with caramel sauce" loading="lazy">
+                    <div class="menu-tile-body">
+                        <h3>Midnight swirl bun</h3>
+                        <p>Warm dough, dark syrup pool, cold cream on the side.</p>
+                        <span class="price">£6.20</span>
+                    </div>
+                </article>
+                <article class="menu-tile">
+                    <img src="images/kumo-11.png" width="600" height="480" alt="Soft serve in a branded cup with green garnish" loading="lazy">
+                    <div class="menu-tile-body">
+                        <h3>Ribbon twist cup</h3>
+                        <p>Tall swirl, crisp garnish, walk-and-talk format.</p>
+                        <span class="price">£5.40</span>
+                    </div>
+                </article>
+            </div>
+            <div class="menu-row two">
+                <article class="menu-tile">
+                    <img src="images/kumo-12.png" width="600" height="480" alt="Ice cream sandwich with chocolate cookies on a white plate" loading="lazy">
+                    <div class="menu-tile-body">
+                        <h3>Cookie vault</h3>
+                        <p>Thick shells, slow-melt centre, sauce in the well.</p>
+                        <span class="price">£8.10</span>
+                    </div>
+                </article>
+                <article class="menu-tile">
+                    <img src="images/kumo-13.png" width="600" height="480" alt="Soft serve in a yellow cup with orange spoons" loading="lazy">
+                    <div class="menu-tile-body">
+                        <h3>Cloud-top cup</h3>
+                        <p>Bright cup, street light, two spoons for arguing.</p>
+                        <span class="price">£5.90</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrap foot-grid">
+            <div>
+                <div class="brand-mark" style="margin-bottom:8px;">Bellucci Desserts</div>
+                <p>Replace dish names and prices with your real menu.</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="visit.html">Visit</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:info@belluccidesserts.in">info@belluccidesserts.in</a></li>
+                    <li><a href="https://belluccidesserts.in">belluccidesserts.in</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="foot-note wrap">© 2026 Bellucci Desserts</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
